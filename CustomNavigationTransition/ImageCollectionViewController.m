@@ -73,7 +73,7 @@
         return [[CustomTransition alloc] initWithReverse:NO];
     }
     else if ([toVC isKindOfClass:[self class]]){
-        return [[CustomTransition alloc] initWithReverse:NO];
+        return [[CustomTransition alloc] initWithReverse:YES];
     }
     return nil;
     
