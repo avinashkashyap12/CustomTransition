@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ImageCollectionViewCell.h
 //  CustomNavigationTransition
 //
 //  Created by Avinash Kashyap on 8/22/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
--(IBAction)nextButtonAction:(UIButton *)sender;
+@interface ImageCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
 @end
-

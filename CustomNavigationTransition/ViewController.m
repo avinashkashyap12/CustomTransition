@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ImageCollectionViewController.h"
 
 @interface ViewController ()
 
@@ -23,5 +24,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark -
+-(IBAction)nextButtonAction:(UIButton *)sender{
+    ImageCollectionViewController *imageCollectionVC = [[ImageCollectionViewController alloc] initWithNibName:@"ImageCollectionViewController" bundle:nil];
+    [self.navigationController pushViewController:imageCollectionVC animated:YES];
+}
 @end
